@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow: auto;
+  font-family: $font;
+  background-color: $white;
+  color: $black;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  padding: 2rem 1rem;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+a {
+  color: $interactive;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.error {
+  color: $delete-red;
+}
+
+/**************
+CARDS GRID
+**************/
+
+.index > ul {
+  display: grid;
+  gap: 1rem;
+}

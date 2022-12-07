@@ -1,0 +1,64 @@
+.content {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+  row-gap: 1rem;
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    grid-template-columns: 1fr auto;
+
+    .text {
+      grid-row: span 2;
+    }
+
+    .button-container {
+      grid-column: 2;
+      grid-row: 2;
+      align-items: flex-end;
+    }
+  }
+
+  .admin-buttons {
+    align-items: flex-end;
+  }
+}
+
+.text,
+.infos-list,
+.admin-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+h3 {
+  margin: 0;
+}
+
+.infos-list {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.description {
+  p {
+    white-space: pre-wrap;
+  }
+}
+
+li.description {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+
+  p {
+    white-space: normal;
+  }
+}

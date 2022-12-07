@@ -1,0 +1,12 @@
+<div class="dark-overlay" id="{{ style.id }}_overlay_wrapper">
+    <div class="delete-popup">
+        <p>Are you sure you want to delete this style ?</p>
+        <div class="buttons">
+            <button class="button secundary-button cancel">Cancel</button>
+            <form action="{{ path('app_style_delete', {'id': style.id}) }}" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ style.id) }}">
+                <button class="button delete">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>

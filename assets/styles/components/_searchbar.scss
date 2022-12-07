@@ -1,0 +1,29 @@
+.searchbar {
+  width: 100%;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: $white;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+  }
+
+  .search-icon {
+    padding: 0.5rem;
+  }
+
+  .search {
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    width: 100%;
+  }
+
+  .submit {
+    border-radius: 0;
+    border: none;
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
+}

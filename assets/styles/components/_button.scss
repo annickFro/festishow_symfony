@@ -1,0 +1,53 @@
+.button,
+.submit {
+  cursor: pointer;
+  background-color: $interactive;
+  color: $white;
+  border: solid 2px $interactive;
+  font-size: inherit;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.button {
+  &:hover {
+    background: none;
+    color: $black;
+  }
+
+  &.secundary-button {
+    background-color: $white;
+    color: inherit;
+    border: solid 2px $interactive;
+
+    &:hover {
+      background-color: $interactive;
+      color: $white;
+    }
+  }
+
+  &.delete {
+    background-color: $trash-red;
+    border: solid 2px $delete-red;
+    color: $delete-red;
+
+    &:hover {
+      background-color: $delete-red;
+      color: $white;
+    }
+  }
+
+  a {
+    color: inherit;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+
+    @media screen and (min-width: $desktop) {
+      padding: 1rem 2rem;
+    }
+  }
+}

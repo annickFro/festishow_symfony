@@ -1,0 +1,41 @@
+.show {
+  .description {
+    grid-column: span 2;
+    border-top: solid 1px;
+    padding-top: 2rem;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+
+  form,
+  #reservation > div,
+  #reservation {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  input {
+    width: auto;
+    padding: 0.5rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    .img-container {
+      width: 100%;
+      max-width: none;
+      max-height: 400px;
+    }
+
+    img {
+      transform: none;
+      width: 100%;
+    }
+
+    .unset-img {
+      transform: translate(0, -31%);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.dark-overlay {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+
+  &.active {
+    visibility: visible;
+  }
+}
+
+.delete-popup {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+  }
+}

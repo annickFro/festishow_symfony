@@ -1,0 +1,21 @@
+.style-form {
+  margin-bottom: 2rem;
+
+  form,
+  #style > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  input {
+    width: auto;
+    padding: 0.5rem;
+  }
+}
+
+.style .card .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

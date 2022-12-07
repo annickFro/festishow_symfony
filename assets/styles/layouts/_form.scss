@@ -1,0 +1,58 @@
+form {
+  width: 100%;
+
+  label {
+    text-align: left;
+    margin-right: 0;
+    width: auto;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px $black;
+  }
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 768px;
+    background-color: $light-grey;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px;
+
+    #event {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .vich-file > *:not(input) {
+      display: none;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: 0.5rem;
+      border: solid 1px $black;
+    }
+  }
+}

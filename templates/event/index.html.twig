@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <section class="index container">
+        <h1>Welcome ! Choose your event</h1>
+        {% for message in app.flashes('success') %}
+          <div class="alert alert-success">
+              {{ message }}
+          </div>
+        {% endfor %}
+        <ul>
+            {% for event in events %}
+                <li>
+                    {% include 'component/_card.html.twig' %}
+                </li>
+            {% else %}
+                <li>There is no event corresponding to your research for now. We'll add some soon 😉</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

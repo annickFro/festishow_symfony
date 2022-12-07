@@ -1,0 +1,36 @@
+.img-container {
+  overflow: hidden;
+  max-height: 150px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 250px;
+    max-height: 100%;
+    position: relative;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 350px;
+  }
+}
+
+img {
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    width: auto;
+    height: 100%;
+    transform: translate(-25%, -10%);
+  }
+}
+
+.unset-img {
+  transform: translate(2%, -29%);
+
+  @media screen and (min-width: $tablet) {
+    transform: translate(-35%, -35%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    transform: translate(-29%, -28%);
+  }
+}

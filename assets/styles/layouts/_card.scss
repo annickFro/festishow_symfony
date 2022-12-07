@@ -1,0 +1,16 @@
+.card {
+  width: 100%;
+  border: solid 1px $black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-start;
+    max-height: 250px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-height: 350px;
+  }
+}
